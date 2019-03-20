@@ -1,0 +1,56 @@
+footer{
+
+  .footer__content{
+    justify-content: space-between;
+
+    .footer__text{
+      color: $content;
+      font-family: $fontFamilyContent;
+      font-size: rem(13px);
+      padding-bottom: 10px;
+    }
+    .social{
+
+
+      @include e(link){
+
+        transition: all 0.3s;
+        @include m(tw){
+          background-position: 0 -64px;
+          &:hover{
+
+            background-position: 0 -80px;
+          }
+        }
+        @include m(fb){
+          background-position: 0 -32px;
+          &:hover{
+
+            background-position: 0 -48px;
+          }
+        }
+        @include m(pi){
+          background-position: 0 -128px;
+          &:hover{
+
+            background-position: 0 -144px;
+          }
+        }
+        @include m(inst){
+          background-position: 0 -96px;
+          &:hover{
+
+            background-position: 0 -112px;
+          }
+        }
+        @include m(in){
+          background-position: 0 -160px;
+          &:hover{
+
+            background-position: 0 -176px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.container-3__nav{
+  text-align: center;
+  padding-top: 110px;
+
+  @include s(item){
+    font-family: $fontFamilyContent;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: rem(14px);
+    color: $content;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 15px;
+
+
+    /*&:last-child{
+      padding-right: 0;
+    }*/
+  }
+}
+img {
+  vertical-align: top;
+}
+.photo__img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: all .2s;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding-bottom: 115px;
+}
+.photo {
+  padding: 5px;
+  width: 50%;
+}
+
+.active{
+  transition: all .5s;
+    color: $blue;
+
+}

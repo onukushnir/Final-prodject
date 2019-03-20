@@ -1,0 +1,23 @@
+.container-1 {
+  .slick2__item {
+    @include s(p1) {
+      padding-top: 40px;
+      font-size: 40px;
+    }
+    @include s(p2) {
+      padding-top: 30px;
+      font-size: 60px;
+    }
+    @include s(p3) {
+      padding-top: 20px;
+      font-size: 30px;
+      padding-bottom: 40px;
+    }
+  }
+  @include s(a){
+    margin-bottom: 50px;
+
+
+  }
+
+}

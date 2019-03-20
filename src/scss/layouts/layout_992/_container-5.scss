@@ -1,0 +1,28 @@
+.container-5{
+  max-width: 1140px;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 100px 10px 100px 10px;
+  justify-content: space-around;
+  align-items: end;
+
+    @include e(block1){
+      flex-basis: 47%;
+      margin-right: 30px;
+      @include s(header){
+        text-align: left;
+      }
+
+    }
+    @include e(block2){
+
+    }
+  .myvideo {
+    padding-bottom:28.25%;
+    flex-basis: 49%;
+
+  }
+
+}

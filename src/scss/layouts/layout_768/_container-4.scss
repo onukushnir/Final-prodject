@@ -1,0 +1,9 @@
+.container-4 {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+    @include e(flex){
+      flex-basis: 40%;
+    }
+}

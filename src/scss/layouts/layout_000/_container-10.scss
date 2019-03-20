@@ -1,0 +1,81 @@
+.container-fluid_container-10{
+  max-width: 400px;
+  margin: auto;
+  .container-10__header{
+    font-size: 2.25rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 40px 0 55px 0;
+    text-align: center;
+  }
+  .hide {
+    display: none;
+  }
+
+  .valid-msg {
+
+    color: red;
+    font-style: italic;
+  }
+  .row{
+    padding-bottom: rem(50px);
+  }
+  label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: $fontFamilyContent;
+    line-height: 1.5;
+    color: $header;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .form-group {
+    margin-bottom: 2rem;
+  }
+  .form-group:focus{
+    outline: #ccc auto 5px;
+  }
+  .form-control {
+    display: block;
+    width: 92%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: $blue;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.45);
+  }
+  .btn {
+    display: block;
+    margin: auto;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    background-color: $header;
+    border-color: $blue;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: .575rem 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,
+    border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+}

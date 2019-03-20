@@ -1,0 +1,51 @@
+footer{
+  background-color: $footer;
+
+
+  .footer__content{
+    margin: auto;
+    max-width: 1140px;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .footer__text{
+      color: $content;
+      font-family: $fontFamilyContent;
+      font-size: rem(13px);
+      padding-bottom: 10px;
+    }
+    .social{
+      display: flex;
+      justify-content: center;
+
+      @include e(link){
+        margin-right: 25px;
+        //flex-basis: 25px;
+        height: 16px;
+        width: 16px;
+        background-image: url(#{$i}sprite.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent: -9999px;
+
+        @include m(tw){
+          background-position: 0 -64px;
+        }
+        @include m(fb){
+          background-position: 0 -32px;
+        }
+        @include m(pi){
+          background-position: 0 -128px;
+        }
+        @include m(inst){
+          background-position: 0 -96px;
+        }
+        @include m(in){
+          background-position: 0 -160px;
+        }
+      }
+    }
+  }
+}

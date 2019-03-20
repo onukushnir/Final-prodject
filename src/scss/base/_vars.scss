@@ -1,0 +1,34 @@
+//fonts
+$google-font:  'https://fonts.googleapis.com/css?family=Ubuntu:400,500';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$fontFamilyHeader: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400');
+$fontFamilySecondHeader: 'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+$fontFamilyContent: 'Roboto', sans-serif;
+
+$baseFontSize: 16px;
+$mobileFontSize: 18px;
+$baseFontFamily: 'Ubuntu', sans-serif;
+$mediumFontWeight: 500;
+$mobilePadding: (12px / $baseFontSize) * 1rem;
+$desktopPadding: 1rem;
+
+
+// Paths
+
+$i: "../i/";
+$fontsPath: "../fonts/";
+$usersFilesPath: "../userfiles/";
+
+
+ // Colors
+$black: #000000;
+$white: #ffffff;
+$header: #2d2d2d;
+$background: #F1F1F1;
+$content: #888;
+$darkBackground: #1b1d1c;
+$blue: #1ec0ff;
+$span: #6d6d6d;
+$footer: #111312;

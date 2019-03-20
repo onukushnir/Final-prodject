@@ -1,0 +1,78 @@
+
+
+.container-9{
+  max-width: 1140px;
+  margin: auto;
+  padding: 70px 10px;
+
+    @include e(flex){
+      display: flex;
+      flex-wrap: wrap;
+
+      @include s(block-header){
+        font-family: $fontFamilyHeader;
+        font-size: rem(13px);
+        color: $white;
+        padding-bottom: rem(20px);
+        padding-top: rem(10px);
+        }
+      @include s(block-span){
+        border: 1px solid $span;
+        margin-top: rem(10px);
+        display: block;
+        width: rem(40px);
+      }
+      @include s(block-content){
+        text-decoration: none;
+        font-family: $fontFamilySecondHeader;
+        font-size: rem(13px);
+
+        color: $white;
+        padding-bottom: rem(10px);
+        line-height: rem(24px);
+
+        @include m(block1){
+          font-family: $fontFamilyContent;
+          font-weight: 300;
+        }
+      }
+      @include s(block1){
+        flex-basis: 100%;
+
+        }
+      @include s(block2){
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      @include s(block3){
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      @include s(block4){
+        flex-basis: 100%;
+      }
+    }
+    @include e(gallery){
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      a{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        width: 25%;
+        padding-right: 5px;
+        padding-bottom: 5px;
+      }
+
+    }
+  @include e(img){
+    flex-basis: 25%;
+    width: 100%;
+    max-width: 100%;
+  }
+}

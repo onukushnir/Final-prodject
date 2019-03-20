@@ -1,0 +1,78 @@
+/*
+@font-face  {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('#{$fontsPath}slick.eot');
+    src: url('.#{$fontsPath}slick.eot?#iefix') format('embedded-opentype'),
+        url('#{$fontsPath}slick.woff') format('woff'),
+        url('#{$fontsPath}slick.ttf') format('truetype'),
+        url('#{$fontsPath}#slick') format('svg');
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+html {
+    font-size: $mobileFontSize;
+}
+
+body {
+    font-family: $fontFamilyContent;
+}
+
+h1 {
+    font-weight: $mediumFontWeight;
+}
+.container-fluid_container-2{
+    background: $background;
+}
+.container-2 {
+    max-width: 1120px;
+    margin: auto;
+
+}
+.container-fluid_container-4,
+.container-fluid_container-9{
+    background: $darkBackground;
+}
+.container-fluid_container-3,
+.container-fluid_container-5,
+.container-fluid_container-8
+{
+    background: $background;
+}
+.container-fluid_container-7{
+background: linear-gradient(rgba(0, 0, 0, 0.92),rgba(0, 0, 0, 0.92)), url(#{$i}img1.jpg) fixed;
+    background-size: cover;
+
+}
+
+#toTop {
+    outline:none !important;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    border-radius: 50%;
+    background: $blue;
+    text-align: center;
+    padding: 5px;
+    line-height: 25px;
+    position: fixed;
+    bottom: 35px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+    color: $white;
+    font-size: 14px;
+    z-index: 999;
+
+}
+
+

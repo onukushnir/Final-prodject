@@ -1,0 +1,5 @@
+.container-2__block1 {
+  @include m(header) {
+    font-size: rem(36px);
+  }
+}

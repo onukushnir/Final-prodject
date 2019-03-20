@@ -1,0 +1,130 @@
+.container-8{
+  transition: all .3s ease-in-out;
+  .slick1__item{
+    position: relative;
+    transition: all .3s ease-in-out;
+    .slick1__item-ul{
+      .social__link{
+        margin: 5px;
+        position: absolute;
+        opacity: 0;
+        // margin:10px   12px 0 12px;
+        flex-basis: 16px;
+        height: 16px;
+        width: 16px;
+        background-image: url(#{$i}sprite.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent: -9999px;
+        transition: all .3s;
+        @include m(ut){
+          background-position: 0 0;
+          &:hover{
+            background-position: 0 -16px;
+          }
+        }
+        @include m(tw){
+          background-position: 0 -64px;
+          &:hover{
+            background-position: 0 -80px;
+          }
+        }
+        @include m(fb){
+          background-position: 0 -32px;
+          &:hover{
+            background-position: 0 -48px;
+          }
+        }
+        &:nth-of-type(1){
+          left: 38%;
+        }
+        &:nth-of-type(2){
+          left: 45%;
+        }
+        &:nth-of-type(3){
+          left: 52%;
+        }
+        a{
+          outline:none !important;
+        }
+      }
+    }
+    figcaption {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: calc(100% - 10px);
+      width: calc(100% - 20px);
+      background: rgba(0,0,0,.92);
+      opacity: 0;
+      transition: all .3s ease-in-out;
+    }
+    &:hover figcaption {
+      opacity: 1;
+
+      .slick1__item-caption-title{
+        transition: all .3s ease-in-out;
+        top: 37%;
+        opacity: 1;
+      }
+      .slick1__item-caption-content{
+        transition: all .3s ease-in-out;
+        top: 37%;
+        opacity: 1;
+      }
+
+      @keyframes list {
+        0% { opacity: 0;
+          top: 60%
+        }
+        100%{
+          opacity: 1;
+          top: 55%;
+        }
+      }
+      li:nth-of-type(1){
+        animation: list 0.2s linear  both;
+        top: 50.5%;
+        opacity: 1;
+      }
+      li:nth-of-type(2){
+        animation: list 0.2s linear .1s both;
+        top: 50.5%;
+        opacity: 1;
+      }
+      li:nth-of-type(3){
+        animation: list 0.2s linear .2s both;
+        top: 50.5%;
+        opacity: 1;
+      }
+      .social__link:nth-of-type(1){
+        animation: list 0.2s linear  both;
+        top: 49.5%;
+        opacity: 1;
+      }
+      .social__link:nth-of-type(2){
+        animation: list 0.2s linear .1s both;
+        top: 49.5%;
+        opacity: 1;
+      }
+      .social__link:nth-of-type(3){
+        animation: list 0.2s linear .2s both;
+        top: 49.5%;
+        opacity: 1;
+      }
+    }
+    @include s(caption){
+      @include s(title){
+        opacity: 0;
+        position: relative;
+        top: 27%;
+      }
+      @include s(content){
+        opacity: 0;
+        position: relative;
+        top: 34%;
+      }
+    }
+
+  }
+}

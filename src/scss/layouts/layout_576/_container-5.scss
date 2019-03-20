@@ -1,0 +1,9 @@
+.container-5{
+  margin: 0 7%;
+    @include e(block1){
+
+      @include s(header){
+        font-size: rem(36px);
+      }
+    }
+}

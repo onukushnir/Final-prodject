@@ -1,0 +1,32 @@
+
+
+.container-9{
+    @include e(flex){
+      @include s(block-content){
+
+        &:hover{
+          transition: all 300ms ease-in-out;
+          color: $blue;
+        }
+        @include m(block1){
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+
+      @include s(block1){
+        margin-right: auto;
+        flex-basis: 33%;
+        }
+      @include s(block2){
+        flex-basis: 15%;
+      }
+      @include s(block3){
+        flex-basis: 15%;
+      }
+      @include s(block4){
+        flex-basis: 35%;
+      }
+    }
+}

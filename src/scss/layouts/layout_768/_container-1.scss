@@ -1,0 +1,37 @@
+.container-1 {
+  padding-top: 50px;
+  .slick2__item {
+    @include s(p1) {
+      padding-top: 40px;
+      font-size: 50px;
+    }
+    @include s(p2) {
+      padding-top: 30px;
+      font-size: 80px;
+    }
+    @include s(p3) {
+      padding-top: 20px;
+      font-size: 30px;
+      padding-bottom: 40px;
+    }
+    @include s(a){
+      margin-bottom: 50px;
+
+
+    }
+  }
+  .navbar {
+
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+  }
+
+}

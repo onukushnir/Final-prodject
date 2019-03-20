@@ -1,0 +1,22 @@
+
+
+.container-9{
+    @include e(flex){
+
+      @include s(block1){
+        flex-basis: 50%;
+        padding-right: rem(20px);
+        }
+      @include s(block2){
+        flex-basis: 50%;
+
+      }
+      @include s(block3){
+        flex-basis: 50%;
+
+      }
+      @include s(block4){
+        flex-basis: 50%;
+      }
+    }
+}
